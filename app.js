@@ -1,4 +1,12 @@
-const inputText = document.querySelector("#input-texto").value;
+const salida = (textoSalida) => {
+    const divSalida = document.getElementById("divSalida");
+    const salidaTemplate = document.getElementById("salidaTemplate");
+    const clone = salidaTemplate.content.cloneNode(true);
+    clone.querySelector(".salida-texto").textContent = textoSalida;
+    divSalida.appendChild(clone)
+}
+
+
 
 // inputText = "gato "
 
@@ -29,10 +37,20 @@ const encriptar = () => {
     }
     console.log(arrayEncriptado)
     palabraEncriptada = arrayEncriptado.join("")
-    return palabraEncriptada
+
+    salida(palabraEncriptada);
+
+    document.querySelector("#input-texto").value = ""
+
 }
 
+const botonEncriptar = document.getElementById("botonEncriptar");
+
+botonEncriptar.addEventListener("click", encriptar);
+
 const desencriptar = (texto) => {
+
+    const texto = document.querySelector("#input-texto").value;
 
     arrayDesencriptado = []
 
@@ -66,40 +84,26 @@ const desencriptar = (texto) => {
 
     console.log(arrayDesencriptado)
     for (let i = arrayDesencriptado.length - 1; i >= 0; i--) {
-        if (arrayDesencriptado[i-2] == "n" && arrayDesencriptado[i-1] == "t" && arrayDesencriptado[i] == "r"){
-            arrayDesencriptado = arrayDesencriptado.slice(0,-3);
+        if (arrayDesencriptado[i - 2] == "n" && arrayDesencriptado[i - 1] == "t" && arrayDesencriptado[i] == "r") {
+            arrayDesencriptado = arrayDesencriptado.slice(0, -3);
         }
-        if (arrayDesencriptado[i-1] == "m" && arrayDesencriptado[i] == "s"){
-            arrayDesencriptado = arrayDesencriptado.slice(0,-2);
+        if (arrayDesencriptado[i - 1] == "m" && arrayDesencriptado[i] == "s") {
+            arrayDesencriptado = arrayDesencriptado.slice(0, -2);
         }
-        if (arrayDesencriptado[i-1] == "b" && arrayDesencriptado[i] == "r"){
-            arrayDesencriptado = arrayDesencriptado.slice(0,-2);
+        if (arrayDesencriptado[i - 1] == "b" && arrayDesencriptado[i] == "r") {
+            arrayDesencriptado = arrayDesencriptado.slice(0, -2);
         }
-        if (arrayDesencriptado[i-1] == "f" && arrayDesencriptado[i] == "t"){
-            arrayDesencriptado = arrayDesencriptado.slice(0,-2);
+        if (arrayDesencriptado[i - 1] == "f" && arrayDesencriptado[i] == "t") {
+            arrayDesencriptado = arrayDesencriptado.slice(0, -2);
         }
     }
 
     palabraDesencriptada = arrayDesencriptado.join("")
-    return palabraDesencriptada
+    
+    
 
 }
 
-// // var texto = document.querySelector("#input-texto").value;
-// let input = "gatoiber";
-// function desencriptarTexto(texto) {
-//     var textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u"); 
+const botonDesencriptar = document.getElementById("botonDesencriptar");
 
-//     // document.querySelector(".text-input-salida").value = textoCifrado; 
-//     // document.querySelector("#input-texto").value;
-//     return 
-
-// }
-
-textoEncriptado = encriptarTexto(inputText);
-
-document.querySelector(".texto-salida").value = textoEncriptado;
-
-textoDesencriptado = desencriptar(inputText)
-document.querySelector(".texto-salida").value = textoDesencriptado;
-
+botonEncriptar.addEventListener("click", desencriptar);

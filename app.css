@@ -61,3 +61,32 @@ body {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+
+.caja-parrafo {
+    width: 350px;
+    height: 750px;
+    margin: 25px 25px;
+}
+
+.caja-boton-copiar {
+    width: 350px;
+    height: 80px;
+    margin: 5px 25px;
+}
+
+.botonCopiar {
+    display: block;
+    padding: 20px;
+    margin: auto;
+    width: 350px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    align-items: flex-end;
+}
+
+#divSalida .salida-texto {
+    /* display: inline-block; */
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+}

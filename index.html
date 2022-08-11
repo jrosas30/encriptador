@@ -11,14 +11,22 @@
 <body>
     <div class="container">
         <form action="">
-            <input class="texto" type="text" value="" placeholder="Ingrese texto aquí"></input>
+            <input class="texto" type="text" value="" id="input-texto" placeholder="Ingrese texto aquí"></input>
             <p class="parrafo">Solo letras minúsculas y sin acentos</p>
-            <input class="botones" type="submit" value="Encriptar">
-            <input class="botones" type="submit" value="Desencriptar">
+            <input class="botones" type="button" id="botonEncriptar" value="Encriptar">
+            <input class="botones" type="button" id="botonDesencriptar" value="Desencriptar">
         </form>
         <div class="caja-lateral">
-            <input class="texto-salida" type="text" value="">
+            <div class="caja-parrafo">
+                <p id="divSalida" value=""></p>
+            </div>
+            <div class="caja-boton-copiar">
+                <button class="botonCopiar">Copiar</button>
+            </div>
         </div>
+        <template id="salidaTemplate">
+            <p class="salida-texto"></p>
+        </template>
     </div>
 
     <script src="app.js"></script>
