@@ -44,7 +44,7 @@ botonEncriptar.addEventListener("click", encriptar);
 const desencriptar = () => {
 
     const texto = document.querySelector("#input-texto").value;
-    palabraDesencriptada = texto.replace(/ai/gi, 'a').replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ober/gi, 'o').replace(/ufat/gi, 'u'); 
+    palabraDesencriptada = texto.replace(/ai/gi, 'a').replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
     salida(palabraDesencriptada);
     document.querySelector("#input-texto").value = ""
 
@@ -52,3 +52,21 @@ const desencriptar = () => {
 
 const botonDesencriptar = document.getElementById("botonDesencriptar");
 botonDesencriptar.addEventListener("click", desencriptar)
+
+const copiar = () => {
+    let contenido = document.querySelector(".salida-texto").value;
+    console.log(contenido)
+    navigator.clipboard.writeText(contenido)
+        .then(() => {
+            alert("texto copiado")
+            console.log("Texto copiado")
+        })
+        .catch(err => {
+            alert("ocurrio un error: " + err)
+            console.log('Lo siento ocurrio un error:', err);
+        })
+
+}
+
+const botonCopiar = document.getElementById("botonCopiar");
+botonCopiar.addEventListener("click", copiar)
