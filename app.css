@@ -85,8 +85,11 @@ body {
     align-items: flex-end;
 }
 
-#divSalida .salida-texto {
-    /* display: inline-block; */
-    margin: 2em 2em 2em 2em;
+.salida-texto {
+    width: 100%;
+    height: 700px;
+    border: none;
+    outline: none;
+    padding: 10px auto;
     text-align: center;
 }

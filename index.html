@@ -9,7 +9,10 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <div class="container">
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main class="container">
         <form action="">
             <input class="texto" type="text" value="" id="input-texto" placeholder="Ingrese texto aquí"></input>
             <p class="parrafo">Solo letras minúsculas y sin acentos</p>
@@ -18,17 +21,17 @@
         </form>
         <div class="caja-lateral">
             <div class="caja-parrafo">
-                <p id="divSalida" value=""></p>
+                <label for="salida-texto"></label>
+                <input class="salida-texto" type="text" value="" name="salida-texto">
             </div>
             <div class="caja-boton-copiar">
                 <button class="botonCopiar">Copiar</button>
             </div>
         </div>
-        <template id="salidaTemplate">
-            <p class="salida-texto"></p>
-        </template>
-    </div>
-
+    </main>
+    <footer>
+        
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
