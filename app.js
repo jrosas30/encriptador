@@ -5,7 +5,8 @@ const salida = (textoSalida) => {
 }
 // funcion encriptar utilizando bucle for
 const encriptar = () => {
-    const texto = document.querySelector("#input-texto").value;
+    let texto = document.querySelector("#input-texto").value;
+    texto = texto.toLowerCase()
 
     arrayEncriptado = []
 
@@ -43,7 +44,8 @@ botonEncriptar.addEventListener("click", encriptar);
 
 const desencriptar = () => {
 
-    const texto = document.querySelector("#input-texto").value;
+    let texto = document.querySelector("#input-texto").value;
+    texto = texto.toLowerCase()
     palabraDesencriptada = texto.replace(/ai/gi, 'a').replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
     salida(palabraDesencriptada);
     document.querySelector("#input-texto").value = ""
