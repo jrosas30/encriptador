@@ -15,21 +15,26 @@
         </header>
         <main>
             <form action="">
-                <input class="texto" type="text" value="" id="input-texto" rows="5" placeholder="Ingrese texto aquí"></input>
+                <textarea class="texto" type="text" value="" id="input-texto" rows="5" placeholder="Ingrese texto aquí"></textarea>
                 <p class="parrafo">Solo letras minúsculas y sin acentos</p>
                 <input class="botones" type="button" id="botonEncriptar" value="Encriptar">
                 <input class="botones" type="button" id="botonDesencriptar" value="Desencriptar">
             </form>
             <div class="caja-lateral">
                 <div class="caja-parrafo">
-                    <label for="salida-texto"></label>
-                    <input class="salida-texto" type="text" value="" placeholder="Ningun mensaje" name="salida-texto">
+                    <textarea class="salida-texto" type="text" value="" placeholder="Ningun mensaje recibido"></textarea>
                 </div>
                 <div class="caja-boton-copiar">
                     <button class="botonCopiar" id="botonCopiar">Copiar</button>
                 </div>
             </div>
         </main>
+        <footer>
+            <p>Copyright 2022</p>
+            <p>Created By</a></p>
+            <p>Juan Rosas</p>
+            <!-- <p>Síguenos en <a href=”#”>Facebook</a></p> -->
+        </footer>
     </div>
     <script src="app.js"></script>
 </body>
