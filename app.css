@@ -146,6 +146,7 @@ h1 {
         margin-bottom: 20px;
         text-align: center;
         font-size: 25px;
+        
     }
 
     .botones {
@@ -206,6 +207,118 @@ h1 {
         padding: 10px auto;
         text-align: center;
         font-size: 25px;
+        
+    }
+
+    .caja-boton-copiar {
+        position: relative;
+        width: 600px;
+        height: 70px;
+        margin: 5px 5px;
+    }
+
+    .botonCopiar {
+        display: block;
+        padding: 10px;
+        margin: 0px;
+        width: 600px;
+        height: 67px;
+        background: #0A3871;
+        border-radius: 24px;
+        align-items: flex-end;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .mainItems {
+        grid-template-columns: auto;
+    }
+    .container {
+        width: 600px;
+        height: 1174px;
+        left: 0px;
+        top: 10px;
+        border-radius: 0px;
+    }
+
+    .texto {
+        width: 600px;
+        height: 480px;
+        left: 40px;
+        top: 240px;
+        border-radius: 25px;
+        padding: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
+    .botones {
+        display: inline-block;
+        padding: 2px;
+        margin: 10px 30px;
+        gap: 8px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFFFFF;
+        width: 620px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        background: #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .caja-lateral {
+        position: relative;
+        width: 600px;
+        height: 200px;
+        left: 30px;
+        top: 70px;
+        padding: 20px;
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        /* White */
+
+        background: #FFFFFF;
+        /* shadow */
+
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .caja-parrafo {
+        width: 600px;
+        height: 180px;
+        margin: 0px 10px;
+    }
+
+    .salida-texto {
+        width: 600px;
+        height: 100px;
+        border: none;
+        outline: none;
+        padding: 10px auto;
+        text-align: center;
+        font-size: 25px;
+        
     }
 
     .caja-boton-copiar {
