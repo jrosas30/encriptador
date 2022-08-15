@@ -135,16 +135,16 @@ h1 {
     }
 
     .texto {
-        width: 600px;
+        width: 500px;
         height: 480px;
         left: 40px;
         top: 240px;
         border-radius: 25px;
         padding: 20px;
-        margin-left: 40px;
-        margin-right: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         text-align: center;
         font-size: 25px;
         
@@ -158,7 +158,7 @@ h1 {
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFFFFF;
-        width: 620px;
+        width: 520px;
         height: 67px;
 
         /* Dark blue/dark-blue-300 */
@@ -175,10 +175,10 @@ h1 {
 
     .caja-lateral {
         position: relative;
-        width: 600px;
+        width: 470px;
         height: 200px;
         left: 30px;
-        top: 70px;
+        top: 10px;
         padding: 20px;
         margin-left: 0px;
         margin-right: 30px;
@@ -195,13 +195,13 @@ h1 {
     }
 
     .caja-parrafo {
-        width: 600px;
+        width: 480px;
         height: 180px;
         margin: 0px 10px;
     }
 
     .salida-texto {
-        width: 600px;
+        width: 470px;
         height: 100px;
         border: none;
         outline: none;
@@ -213,7 +213,7 @@ h1 {
 
     .caja-boton-copiar {
         position: relative;
-        width: 600px;
+        width: 500px;
         height: 70px;
         margin: 5px 5px;
     }
@@ -222,7 +222,7 @@ h1 {
         display: block;
         padding: 10px;
         margin: 0px;
-        width: 600px;
+        width: 470px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -231,6 +231,16 @@ h1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFFFFF;
     }
+
+    footer {
+        position: inherit;
+        margin-top: 50px;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -348,6 +358,7 @@ h1 {
         position: inherit;
         margin-top: 40px;
     }
+
     footer p{
         text-align: center;
     }
